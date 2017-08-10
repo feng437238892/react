@@ -1,0 +1,49 @@
+@import "$yo-config/core/reset";
+@import "$yo-config/layout/yo-root";
+@import "$yo-config/layout/yo-flex";
+@import "$yo-config/element/yo-btn";
+
+@include yo-btn(
+    $name: light,
+    $border-width: 1px,
+    $border-color: #666,
+    $bgcolor: #fff,
+    $color: #333
+)
+{
+    margin: .1rem;
+};
+.titleh{
+	display: block;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 2em;
+    background: #0094f5;
+    color: white;
+    font-weight: 100;
+    border-radius: 5px;
+    box-shadow:10px 5px 5px #888888;
+}
+.desc{
+	font-size: 14px;
+    margin: 10px;
+}
+.desc1{
+	margin:10px
+}
+.bd{
+	margin-top:10px;
+	width: 374px;
+    box-shadow:10px 10px 5px #888888;
+}
+.bord{
+	border:1px solid #000;
+	border-top:0;
+	box-shadow:10px 10px 5px #888888;
+}
+.extra{
+	opacity: 0.8;
+	width: 380px;
+
+	margin-top:10px
+}

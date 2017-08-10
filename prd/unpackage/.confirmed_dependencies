@@ -1,0 +1,22 @@
+{
+  "index.html": {
+    "resources": [
+      "font/iconfont.css",
+      "index.html",
+      "font/iconfont.woff",
+      "jquery-1.12.1.js",
+      "page/demo/index.js",
+      "page/demo/index.css",
+      "font/demo.css",
+      "lib.js",
+      "jweixin-1.0.0.js",
+      "1.chunk@9f4fb53b2ba93ec0d57d.js",
+      "4.chunk@a61472250d6f6d2a0ed6.js",
+      "3.chunk@1359695acc4cdec9ae8a.js",
+      "2.chunk@90ad336b3be184d149df.js"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
+}

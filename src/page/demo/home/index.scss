@@ -1,0 +1,248 @@
+@import "$yo-config/core/reset";
+@import "$yo-config/layout/yo-root";
+@import "$yo-config/layout/yo-flex";
+
+.m-content {
+    .title {
+        text-align: center;
+        font-size: .2rem;
+        color: #666666;
+        padding: .1rem;
+    } 
+    .notice {
+        text-align: center;
+        font-size: .16rem;
+        color: #555555;
+        padding: .1rem;
+    }
+    .m-content-active {
+        opacity: 0.7;
+    }
+}
+
+.Header{
+    position:relative;
+    height:1.7rem;
+}
+
+.Header .headerInfo{
+    margin-top:.18rem;
+    margin-left:.08rem;
+}
+.Header .headerInfo p{
+    line-height:.28rem;
+}
+.Header .headerImg{
+    position:absolute;
+    right:.03rem;
+    top:-0.04rem;
+}
+ .item.introduce{
+     line-height:.27rem;
+}
+
+/**
+ * @module fade
+ * @description 定义从右侧淡入动画
+ * @method fade-in-right
+ */
+@-webkit-keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0)
+    }
+}
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+
+.yo-tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    height: .44rem;
+    position: relative;
+    background-color: #fafafa;
+    text-align: center
+}
+
+.yo-tab::after {
+    position: absolute;
+    overflow: hidden;
+    border-color: #ccc;
+    border-width: 1px 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0
+}
+
+@media (max--moz-device-pixel-ratio:1.49),(-webkit-max-device-pixel-ratio: 1.49),(max-device-pixel-ratio:1.49),(max-resolution:143dpi),(max-resolution:1.49dppx) {
+    .yo-tab::after {
+        width:100%;
+        height: 100%
+    }
+}
+
+@media (min--moz-device-pixel-ratio:1.5) and (max--moz-device-pixel-ratio:2.49),(-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio:2.49),(min-device-pixel-ratio:1.5) and (max-device-pixel-ratio:2.49),(min-resolution:144dpi) and (max-resolution:239dpi),(min-resolution:1.5dppx) and (max-resolution:2.49dppx) {
+    .yo-tab::after {
+        width:200%;
+        height: 200%;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+}
+
+@media (min--moz-device-pixel-ratio:2.5),(-webkit-min-device-pixel-ratio: 2.5),(min-device-pixel-ratio:2.5),(min-resolution:240dpi),(min-resolution:2.5dppx) {
+    .yo-tab::after {
+        width:300%;
+        height: 300%;
+        -webkit-transform: scale(.33333);
+        transform: scale(.33333)
+    }
+}
+
+.yo-tab>.item {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    position: relative;
+    color: #666
+}
+
+.yo-tab>.item:not(:first-child)::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-left: 1px solid transparent;
+    content: "\0020";
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0
+}
+
+@media (max--moz-device-pixel-ratio:1.49),(-webkit-max-device-pixel-ratio: 1.49),(max-device-pixel-ratio:1.49),(max-resolution:143dpi),(max-resolution:1.49dppx) {
+    .yo-tab>.item:not(:first-child)::after {
+        width:10px;
+        height: 100%;
+        -webkit-transform: translatey(-50%);
+        transform: translatey(-50%)
+    }
+}
+
+@media (min--moz-device-pixel-ratio:1.5) and (max--moz-device-pixel-ratio:2.49),(-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio:2.49),(min-device-pixel-ratio:1.5) and (max-device-pixel-ratio:2.49),(min-resolution:144dpi) and (max-resolution:239dpi),(min-resolution:1.5dppx) and (max-resolution:2.49dppx) {
+    .yo-tab>.item:not(:first-child)::after {
+        width:20px;
+        height: 200%;
+        -webkit-transform: scale(.5) translatey(-50%);
+        transform: scale(.5) translatey(-50%)
+    }
+}
+
+@media (min--moz-device-pixel-ratio:2.5),(-webkit-min-device-pixel-ratio: 2.5),(min-device-pixel-ratio:2.5),(min-resolution:240dpi),(min-resolution:2.5dppx) {
+    .yo-tab>.item:not(:first-child)::after {
+        width:30px;
+        height: 300%;
+        -webkit-transform: scale(.33333) translatey(-50%);
+        transform: scale(.33333) translatey(-50%)
+    }
+}
+
+.yo-tab .item.item-on {
+    color: #00bcd4
+}
+
+.yo-tab .item-y-ico {
+    padding-top: .04rem;
+    line-height: .2rem
+}
+
+.yo-tab .item-y-ico .yo-ico {
+    display: block;
+    font-size: .2rem
+}
+
+.yo-tab .item-x-ico .yo-ico {
+    font-size: .12rem
+}
+
+.yo-tab .item-only-ico .yo-ico {
+    font-size: .28rem
+}
+
+
+.yo-carousel .yo-btn {
+    margin-left:35%;
+    margin-top:125%;
+    background-color:#555;
+    opacity:0.6;
+}
+
+
+h3{
+    display: inline-block;
+}
+.header{
+    overflow: hidden;
+    background: url(../../../src/images/IMG_8153.JPG);
+    color:white;
+}
+.imgs{
+    width:100px;
+    height:100px;
+    border:1px solid #fff;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+
+}
+.name{
+    float: left;
+    margin: 8px 0 0 10px;
+    h3{
+        line-height: 40px;
+        margin-top:2px
+    }
+}
+
+.list1{
+    background: #eee;
+    .base{
+        background: white;
+        padding: 0px 10px 10px 10px;
+        overflow:hidden;
+        p{
+            display:inline-block;
+            margin-left: 30px;
+        }
+    }
+}
+.yo-carousel{
+    height:100%
+}
+body .btn{
+    position:absolute;
+    bottom: 20%;
+    left: 40%;
+}
+.active{
+    position:relative
+}
+.word{
+    text-align: center;
+    font-size: .2rem;
+    color: #666666;
+    padding: 3px;
+}

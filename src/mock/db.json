@@ -1,0 +1,10 @@
+{
+  "posts":[
+    { "birthday": "1993-11-04", "idcard": "360123199311041952", "address": "杭州滨江" },
+    {"school":"新余学院","major":"计算机应用","date":"2012-2015","education":"专科"},
+    {"jobtype":"全职","jobadd":"杭州","salary":"12000","jobint":"前端应用开发工程师"},
+    {"pro1":"酒仙网","pro2":"饿了吗","pro3":"每日优鲜","pro4":"todos"}
+  ]
+ 
+}
+
